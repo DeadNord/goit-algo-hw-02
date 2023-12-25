@@ -16,7 +16,11 @@ def is_palindrome(input_string):
 
 
 while True:
-    user_input = input("Enter your string: ")
-    # user_input = "A man a plan a canal Panama"
+    user_input = input("Enter your string(or exit for stop the program): ")
+
+    # example: "A man a plan a canal Panama"
+    if user_input == "exit":
+        print("Goodbye! You exited from program.")
+        break
     result = is_palindrome(user_input)
     print(result)
